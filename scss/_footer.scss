@@ -1,0 +1,41 @@
+.footer {
+    background-color: $primary-color;
+
+    img {
+        width: initial;
+    }
+
+    ul li {
+        color: $Grayish-color;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-bottom: 20px;
+    }
+
+    a {
+        color: $Grayish-color;
+        margin-bottom: 2rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .logo {
+        filter: invert(1);
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    &-grid {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+
+        .address a img {
+            width: 5%;
+            margin-right: 10px;
+        }
+
+        .social a img {
+            padding: 1rem;
+        }
+    }
+
+
+}
