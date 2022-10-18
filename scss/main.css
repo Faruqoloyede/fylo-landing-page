@@ -62,28 +62,16 @@ p {
   margin-bottom: 1rem;
 }
 
-.about-content .btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 40px;
+.about-content .btn a {
+  color: #3c9f8f;
+  text-decoration: underline;
 }
 
 .about-content .btn img {
-  width: 4%;
-}
-
-.about-content .btn a {
-  color: #3c9f8f;
-  border-bottom: 1px solid #3c9f8f;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 3%;
 }
 
 .about .card {
-  background-color: blue;
   width: 30%;
   padding: 5px 15px 3px 15px;
   background-color: #f6f6fe;
@@ -96,10 +84,16 @@ p {
   margin-top: 20px;
 }
 
+.about .card .qoute {
+  width: 15%;
+  margin-right: 20px;
+}
+
 .about .card img {
   width: 15%;
   border-radius: 50%;
-  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-right: 10px;
 }
 
 .about .avater {
@@ -228,7 +222,7 @@ p {
 
 .showcase nav ul li {
   display: inline-block;
-  padding: 0px 5px;
+  padding: 0px 10px;
 }
 
 .showcase nav ul li a {
@@ -251,7 +245,6 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
 }
 
 .showcase .main .text-secondary {
@@ -275,11 +268,11 @@ p {
 }
 
 .showcase .main .form form input[type="email"] {
-  padding: 5px 5px;
+  padding: 10px 25px;
   outline: none;
   border-radius: 3px;
   border: 1px solid #bfbfbf;
-  margin-right: 10px;
+  margin-right: 20px;
   cursor: pointer;
 }
 
@@ -290,15 +283,163 @@ p {
 
 .showcase .main .form form input[type="submit"] {
   background-color: #3065f8;
-  padding: 5px 25px;
+  padding: 10px 18px;
   color: #f6f6fe;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   border-radius: 3px;
-  margin-left: 20px;
   font-weight: 300;
   -webkit-box-shadow: 0px 4px 5px #bfbfbf;
           box-shadow: 0px 4px 5px #bfbfbf;
   border: none;
   outline: none;
+}
+
+@media (max-width: 600px) {
+  .showcase nav ul li {
+    padding: 0px 5px;
+  }
+  .showcase .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    width: 100%;
+  }
+  .showcase .main .text-secondary {
+    font-size: 35px;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+  .showcase .main p {
+    text-align: center;
+    font-size: 14px;
+  }
+  .showcase .main img {
+    width: 90%;
+  }
+  .showcase .main .form form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .showcase .main .form form input[type="email"] {
+    margin-bottom: 1.5rem;
+    width: 100%;
+    padding: 20px 100px;
+  }
+  .showcase .main .form form input[type="email"]::-webkit-input-placeholder {
+    text-align: center;
+  }
+  .showcase .main .form form input[type="email"]:-ms-input-placeholder {
+    text-align: center;
+  }
+  .showcase .main .form form input[type="email"]::-ms-input-placeholder {
+    text-align: center;
+  }
+  .showcase .main .form form input[type="email"]::placeholder {
+    text-align: center;
+  }
+  .showcase .main .form form input[type="submit"] {
+    width: 100%;
+    text-align: center;
+    padding: 15px 100px;
+  }
+  .about {
+    background: url("../img/bg-curve-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    margin-top: 25rem;
+  }
+  .about-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .about-content img {
+    width: 100%;
+  }
+  .about-content .text .text-secondary {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .about-content .btn {
+    text-align: center;
+  }
+  .about .card {
+    width: 80%;
+    margin-left: 50px;
+    margin-top: 2rem;
+  }
+  .about .card .qoute {
+    width: 8%;
+  }
+  .activity {
+    width: 100%;
+  }
+  .activity-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 0.5rem;
+  }
+  .activity-grid h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  .activity-grid p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 0rem;
+  }
+  .activity-grid .form {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .activity-grid .form input[type="email"] {
+    padding: 15px 8px;
+  }
+  .activity-grid .form input[type="submit"] {
+    margin-bottom: 2rem;
+    padding: 15px 75px;
+  }
+  .footer {
+    width: 100%;
+  }
+  .footer-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .footer-grid .address a img {
+    width: 3%;
+  }
+  .footer-grid .link {
+    margin-top: 2rem;
+    font-size: 18px;
+  }
+  .footer-grid .links {
+    font-size: 18px;
+  }
+  .footer-grid .social {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */

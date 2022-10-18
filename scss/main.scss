@@ -4,6 +4,7 @@
 @import './activity';
 @import './footer';
 
+
 .showcase {
     background-color: white;
     width: 100%;
@@ -17,7 +18,7 @@
 
         ul li {
             display: inline-block;
-            padding: 0px 5px;
+            padding: 0px 10px;
 
             a {
                 color: $primary-color;
@@ -35,7 +36,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 100%;
+        
 
         .text-secondary {
             margin-bottom: 1rem;
@@ -52,11 +53,12 @@
             align-items: center;
             margin-top: 2rem;
             input[type="email"] {
-                padding: 5px 5px;
+                padding: 10px 25px;
+                
                 outline: none;
                 border-radius: 3px;
                 border: 1px solid $Gray-color;
-                margin-right: 10px;
+                margin-right: 20px;
                 cursor: pointer;
 
                 &:focus{
@@ -69,11 +71,11 @@
 
             input[type="submit"] {
                 background-color: $Blue-color;
-                padding: 5px 25px;
+                padding: 10px 18px;
                 color: $Grayish-color;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 border-radius: 3px;
-                margin-left: 20px;
+                
                 font-weight: 300;
                 box-shadow: 0px 4px 5px $Gray-color;
                 border: none;
@@ -82,3 +84,5 @@
         }
     }
 }
+
+@import './mobile';
