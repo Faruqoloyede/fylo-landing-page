@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="scss/main.css">
+    <script defer src="/app.js"></script>
     <title>fylo-landing-page</title>
 </head>
 <body>
@@ -45,7 +46,7 @@
         <div class="container">
             <div class="about-content">
                 <div class="text">
-                    <h2 class="text-secondary">Stay productive, wherever you are</h2>
+                    <h2 class="text-secondary hidden">Stay productive, wherever you are</h2>
                     <p>Never let location be an issue when accessing your files. Fylo has you 
                         covered for all of your file storage needs.</p>
                         <p>Securely share files and folders with friends, family and colleagues for
@@ -55,10 +56,10 @@
                             
                             </div>
                 </div>
-                <img src="img/illustration-2.svg">
+                <img src="img/illustration-2.svg" class="hidden">
             </div>
             
-            <div class="card">
+            <div class="card hidden">
                 <img src="img/icon-quotes.svg" class="qoute">
                 <p>Fylo has improved our team productivity by an order of magnitude. Since 
                     making the switch our team has become a well-oiled collaboration machine.</p>
@@ -134,5 +135,7 @@
             </div>
         </div>
     </section>
+
+    
 </body>
 </html>

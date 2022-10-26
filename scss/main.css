@@ -34,6 +34,24 @@ p {
   line-height: 1.5;
 }
 
+.hidden {
+  opacity: 0;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  -webkit-filter: blur(0);
+          filter: blur(0);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
 .about {
   background: url("../img/bg-curve-desktop.svg");
   background-repeat: no-repeat;
@@ -78,6 +96,8 @@ p {
   -webkit-box-shadow: 0 3px 5px #bfbfbf;
           box-shadow: 0 3px 5px #bfbfbf;
   margin-bottom: 3rem;
+  -webkit-transition-delay: 1ms;
+          transition-delay: 1ms;
 }
 
 .about .card p {
@@ -251,6 +271,8 @@ p {
   margin-bottom: 1rem;
   font-size: 35px;
   line-height: 1.2;
+  -webkit-transition-delay: 2s;
+          transition-delay: 2s;
 }
 
 .showcase .main img {
