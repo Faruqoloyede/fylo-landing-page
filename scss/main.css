@@ -157,7 +157,6 @@ p {
   outline: none;
   border-radius: 3px;
   border: 1px solid #bfbfbf;
-  margin-bottom: 1rem;
   cursor: pointer;
   width: 60%;
 }
@@ -165,6 +164,11 @@ p {
 .activity-grid .form input[type="email"]:focus {
   outline: 1px solid #3c9f8f;
   border: none;
+}
+
+.activity-grid .form #text {
+  font-family: sans-serif;
+  font-size: 12px;
 }
 
 .activity-grid .form input[type="submit"] {
@@ -176,6 +180,7 @@ p {
   font-weight: 300;
   border: none;
   outline: none;
+  margin-top: 1rem;
 }
 
 .footer {
@@ -354,7 +359,6 @@ p {
     text-align: center;
   }
   .showcase .main .form form input[type="email"] {
-    margin-bottom: 1.5rem;
     width: 100%;
     padding: 20px 100px;
   }
@@ -374,6 +378,7 @@ p {
     width: 100%;
     text-align: center;
     padding: 15px 100px;
+    margin-top: 1.5rem;
   }
   .about {
     background: url("../img/bg-curve-mobile.svg");

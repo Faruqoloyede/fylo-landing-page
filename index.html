@@ -83,10 +83,11 @@
                     <p>It only takes a minute to sign up and our free starter tier is extremely generous. 
                         If you have any questions, our support team would be happy to help you.</p>
                 </div>
-                <div class="form">
-                    <form name="contact" netlify> 
+                <div class="form hidden">
+                    <form name="contact" netlify id="form"> 
                         <div>
-                        <input type="email" name="email" placeholder="Enter Your email.." required>
+                        <input type="email" name="email" placeholder="Enter Your email.." required id="email">
+                        <div id="text"></div>
                     </div>
                     <div>
                         <input type="submit" name="submit" value="Get Started For Free">
