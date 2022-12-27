@@ -32,4 +32,10 @@ if(email.match(pattern)){
     text.innerHTML = "please enter the correct email address!";
     text.style.color = "#ff0000"
 }
+if(email === ""){
+    form.classList.remove("invalid");
+    form.classList.remove("valide")
+    text.innerHTML = "";
+    text.style.color = "#ff0000"
+}
 }
